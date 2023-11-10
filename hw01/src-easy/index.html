@@ -61,9 +61,7 @@ function createArray(length) {
 }
 
 function getRandomDepartment() {
-  const departments = [
-    "資工一", "資工二", "資工三", "資工四", "資工碩一", "資工碩二", "電資AI碩一", "電資AI碩二", "電資資安碩一", "電資資安碩二", "創新AI碩一", "創新AI碩二"
-  ];
+  const departments = ["資工", "資工碩", "電資AI", "電資資安", "創新AI"];
 
   const randomIndex = Math.floor(Math.random() * departments.length);
   return departments[randomIndex];
