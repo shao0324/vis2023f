@@ -1,0 +1,14 @@
+{
+  "name": "7343240f534cb5b0",
+  "main": "7343240f534cb5b0@100.js",
+  "version": "100.0.0",
+  "homepage": "https://observablehq.com/d/7343240f534cb5b0",
+  "author": {
+    "name": "shao's Workspace",
+    "url": "https://observablehq.com/@shao-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
