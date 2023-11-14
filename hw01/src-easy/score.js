@@ -38,31 +38,19 @@ function generateRandomStudentID() {
     return studentID;
 }
 
-a1 = createArray();     // [] or new Array()
-//alert(a1);
-
-a2 = createArray(2);    // new Array(2)
-//alert(a2);
-
-a3 = createArray(121, 13); // [new Array(2),
-                   //  new Array(2),
-                   //  new Array(2)]
-//alert(a3);
+a1 = createArray();
+a2 = createArray(2);
+a3 = createArray(121, 13);
 
 a3[0] = ['序號', '班級', '學號', '姓名', 'GitHub 帳號', '作業一', '作業二', '作業三', '作業四', '作業五', '作業六', '作業七', '作業八', '作業九', '作業十']
 
 for (var i = 1; i < a3.length; i++) {
     a3[i][0] = i;
-    // a3[i][1] = '電資四';
     a3[i][1] = getRandomDepartment();
-    // a3[i][2] = 112598000 + Math.floor(Math.random() * 999);
     a3[i][2] = generateRandomStudentID();
-    //a3[i][1] = '路人甲'; // 4E00-9FFF
-    //a3[i][1] = String.fromCharCode(0x6771);
     a3[i][3] = String.fromCharCode(Math.floor(Math.random() * 0x51ff + 0x4e00)) +
                String.fromCharCode(Math.floor(Math.random() * 0x51ff + 0x4e00)) +
                String.fromCharCode(Math.floor(Math.random() * 0x51ff + 0x4e00));
-    
     
     //a3[i][2] = 'github';
     // https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
@@ -71,7 +59,6 @@ for (var i = 1; i < a3.length; i++) {
     // number.toString(radix) 10個數字 + 26個英文字母 = 36
     a3[i][4] = (Math.random() + 1).toString(36).substring(2);
 
-    
     for (var j = 5; j < a3[0].length; j++) {
         a3[i][j] = Math.floor(Math.random() * 10);
     }
