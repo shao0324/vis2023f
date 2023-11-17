@@ -1,0 +1,14 @@
+{
+  "name": "e4457f03f647818b",
+  "main": "e4457f03f647818b@158.js",
+  "version": "158.0.0",
+  "homepage": "https://observablehq.com/d/e4457f03f647818b",
+  "author": {
+    "name": "shao's Workspace",
+    "url": "https://observablehq.com/@shao-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
