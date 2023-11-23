@@ -473,7 +473,8 @@ function breadcrumbPoints(d, i) {
 )}
 
 function _19(htl){return(
-htl.html`<style>
+htl.html`<!-- 參考 https://observablehq.com/d/c84affd948a1e733 -->
+<style>
 .tooltip {
   padding: 8px 12px;
   color: white;
