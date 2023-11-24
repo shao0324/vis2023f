@@ -1,8 +1,9 @@
 function _1(md){return(
-md`# HW05 分組圖`
+md`# HW05 分組圖 / Strong baseline
+* 利用蘋果成績圖環繞個人照片(小組)(2pt)`
 )}
 
-function _simple1(d3,simple,drag,url_list,invalidation)
+function _strong(d3,simple,drag,url_list,invalidation)
 {
   // 指定圖表的尺寸。
   const width = 1250;
@@ -50,7 +51,6 @@ function _simple1(d3,simple,drag,url_list,invalidation)
       .attr("transform", d => `translate(${d.x},${d.y})`) // 定位節點
       .call(drag(simulation))
       .on("click", toggleNode) // 添加點擊事件處理程序
-      
 
   // 添加節點外框
   const circleRadius = 20; // 調整圓圈半徑大小
@@ -247,7 +247,7 @@ export default function define(runtime, observer) {
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], _1);
-  main.variable(observer("simple1")).define("simple1", ["d3","simple","drag","url_list","invalidation"], _simple1);
+  main.variable(observer("strong")).define("strong", ["d3","simple","drag","url_list","invalidation"], _strong);
   main.variable(observer()).define(["htl"], _3);
   main.variable(observer("simple")).define("simple", ["FileAttachment"], _simple);
   main.variable(observer("url_list")).define("url_list", _url_list);
