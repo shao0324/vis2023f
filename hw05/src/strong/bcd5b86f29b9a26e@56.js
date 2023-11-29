@@ -6,8 +6,8 @@ md`# HW05 分組圖 / Strong baseline
 function _strong(d3,simple,drag,url_list,invalidation)
 {
   // 指定圖表的尺寸。
-  const width = 1250;
-  const height = 1250;
+  const width = 2000;
+  const height = 400;
 
   // 計算圖形並啟動力模擬。
   const root = d3.hierarchy(simple);
@@ -193,7 +193,7 @@ htl.html`<hr>`
 )}
 
 function _simple(FileAttachment){return(
-FileAttachment("score_ver.json").json()
+FileAttachment("group.json").json()
 )}
 
 function _url_list(){return(
@@ -243,7 +243,7 @@ export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
   const fileAttachments = new Map([
-    ["score_ver.json", {url: new URL("../output.json", import.meta.url), mimeType: "application/json", toString}]
+    ["group.json", {url: new URL("../group.json", import.meta.url), mimeType: "application/json", toString}]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], _1);
